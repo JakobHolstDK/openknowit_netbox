@@ -99,8 +99,8 @@ def netbox_cleanup(url, token):
 
 def kace():
     print("Knowit Automated CMDB enabler")
-    nburl = os.getenv("NETBOXURL")
-    nbtoken = os.getenv("NETBOXTOKEN")
+    nburl = os.getenv("NBURL")
+    nbtoken = os.getenv("NBTOKEN")
     netbox_cleanup(nburl, nbtoken)
 
 

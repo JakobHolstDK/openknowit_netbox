@@ -76,9 +76,11 @@ def netbox_cleanup(url, token):
   contactroles = nb.dcim.contact_roles.all()
   sitegroups = nb.dcim.site_groups.all()
   devices = nb.dcim.devices.all()
+  vms = nb.virtualization.virtualmachines.all()
   devicetypes = nb.dcim.device_types.all()
   deviceroles = nb.dcim.device_roles.all()
-
+  
+  print(vms)
 
 
   nb.dcim.devices.delete(devices)
