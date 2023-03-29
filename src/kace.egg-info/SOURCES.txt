@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/kace/__init__.py
+src/kace/kace.py
+src/kace/netbox.py
+src/kace/package_data.dat
+src/kace.egg-info/PKG-INFO
+src/kace.egg-info/SOURCES.txt
+src/kace.egg-info/dependency_links.txt
+src/kace.egg-info/entry_points.txt
+src/kace.egg-info/requires.txt
+src/kace.egg-info/top_level.txt
+tests/test_simple.py
