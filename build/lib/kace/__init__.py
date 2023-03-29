@@ -28,11 +28,11 @@ def main():
     url=os.getenv("NBURL")
 
     if args.action[0] == "netbox":
-      kace.kace(n)
+      kace.kace()
 
 
 
-    
+   
 
 
 
