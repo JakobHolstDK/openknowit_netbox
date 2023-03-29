@@ -88,6 +88,7 @@ def netbox_cleanup(url, token):
 
 
   nb.dcim.device_types.delete(devicetypes)
+  nb.dcim.device_roles.delete(deviceroles)
   nb.dcim.devices.delete(devices)
   nb.virtualization.virtual_machines.delete(vms)
   nb.virtualization.clusters.delete(clusters)
