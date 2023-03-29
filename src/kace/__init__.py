@@ -24,15 +24,15 @@ def main():
                                      ")
     parser.add_argument('action', metavar='<action>', type=str, nargs='+', help='setup netbox')
     args = parser.parse_args()
-    token=os.getenv("NETBOXTOKEN")
-    url=os.getenv("NETBOXURL")
+    token=os.getenv("NBTOKEN")
+    url=os.getenv("NBURL")
 
     if args.action[0] == "netbox":
       kace.kace()
 
 
 
-    
+   
 
 
 
