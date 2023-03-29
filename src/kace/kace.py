@@ -77,6 +77,7 @@ def netbox_cleanup(url, token):
   sitegroups = nb.dcim.site_groups.all()
   devices = nb.dcim.devices.all()
   vms = nb.virtualization.virtual_machines.all()
+  clusters = nb.virtualization.clusters.all()
   devicetypes = nb.dcim.device_types.all()
   deviceroles = nb.dcim.device_roles.all()
 
@@ -86,6 +87,7 @@ def netbox_cleanup(url, token):
   nb.dcim.device_types.delete(devicetypes)
   nb.dcim.devices.delete(devices)
   nb.virtualization.virtual_machines.delete(vms)
+  nb.virtualization.clusters.delete(clusters)
   nb.dcim.sites.delete(sites)
   nb.dcim.site_groups.delete(sitegroups)
   nb.dcim.regions.delete(regions)
