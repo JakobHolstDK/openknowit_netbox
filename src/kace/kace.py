@@ -57,7 +57,7 @@ class Hvac:
     )
 def netbox_cleanup(url, token):
   nb = pynetbox.api(
-    url,
+    url=url,
     token=token
   )
 

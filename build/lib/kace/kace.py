@@ -57,8 +57,8 @@ class Hvac:
     )
 def netbox_cleanup(url, token):
   nb = pynetbox.api(
-    'https://netbox.openknowit.com',
-    token='1b29e94362e31c84431524be05100a6c916641f6'
+    url,
+    token=token
   )
 
 
@@ -97,8 +97,10 @@ def netbox_cleanup(url, token):
 
 def kace():
     print("Knowit Automated CMDB enabler")
-    netbox_cleanup()
-    
+    nburl = os.getenv("NETBOXURL")
+    nbtoken = os.getenv("NETBOXTOKEN")
+    netbox_cleanup(nburl, nbtoken)
+
 
 
 ### The end
